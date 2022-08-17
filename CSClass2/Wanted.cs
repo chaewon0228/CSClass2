@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSClass2
 {
-    internal class Program
+    class Wanted<T>
     {
-        static void Main(string[] args)
+        public T Value;
+        public Wanted(T Value)
         {
-            Wanted<String> wantedString = new Wanted<string>("String");
+            this.Value = Value;
         }
     }
 }
