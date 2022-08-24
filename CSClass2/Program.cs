@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlTypes;
 
 namespace CSClass2
 {
@@ -10,7 +11,16 @@ namespace CSClass2
     {
         static void Main(string[] args)
         {
-            Wanted<String> wantedString = new Wanted<string>("String");
+            Wanted<string> wantedString = new Wanted<string>("String");
+            Wanted<int> wantedInt = new Wanted<int>(52273);
+            Wanted<double> wantedDouble = new Wanted<double>(52.273);
+            Console.WriteLine(wantedString.Value);
+            Console.WriteLine(wantedInt.Value);
+            Console.WriteLine(wantedDouble.Value);
+
+            Products p = new Products();
+            Console.WriteLine(p[4]);
+            p[4] = 5;
         }
     }
 }
