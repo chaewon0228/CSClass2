@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSClass231
+namespace CSClass2
 {
     class Product : IComparable<Product>
     {
