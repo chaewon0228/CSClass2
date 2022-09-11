@@ -114,6 +114,20 @@ namespace CSClass2
                     Console.WriteLine(line);
                 }
             }
+            
+            
+            // 기본 예외 처리
+            string[] array = { "나", "가" };
+            Console.WriteLine("숫자 입력 (예:1) : ");
+            int input = int.Parse(Console.ReadLine());
+            if(input < array.Length)
+            {
+                Console.WriteLine("입력한 위치의 값은 '" + array[input] + "'입니다.");
+            }
+            else
+            {
+                Console.WriteLine("인덱스 범위를 넘었습니다.");
+            }
         }
 
         class TestClass : IBasic
